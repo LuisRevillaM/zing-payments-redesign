@@ -59,7 +59,7 @@ export const industries = [
     slug: "banking-finance",
     label: "Banking & Finance",
     title: "B2B",
-    image: "./assets/images/industry-banking.jpg",
+    image: "./assets/images/industry-banking-premium.jpg",
     intro: "Streamlined B2B and Large Ticket Credit Card Processing!",
     paragraphs: [
       "With Zing Card, we provide your business with a variety of B2B and large ticket processing methods at low rates.",
@@ -83,7 +83,7 @@ export const industries = [
     slug: "government",
     label: "Government & Municipalities",
     title: "Z-GOV",
-    image: "./assets/images/industry-government.jpg",
+    image: "./assets/images/industry-government-premium.jpg",
     intro:
       "Z-Gov, a division of Zing Card LLC specializes in supporting government agencies and municipalities with their payment services. We specialize in tax collection solutions.",
     paragraphs: [
@@ -111,7 +111,7 @@ export const industries = [
     slug: "parks-rec",
     label: "Parks & Recreation",
     title: "PARKS AND REC",
-    image: "./assets/images/industry-parks.jpg",
+    image: "./assets/images/industry-parks-premium.jpg",
     intro:
       "Today, acceptance of payment cards by park districts is increasing. All public sector institutions are facing similar cost control challenges.",
     paragraphs: [
@@ -136,7 +136,7 @@ export const industries = [
     slug: "restaurants",
     label: "Retail & Restaurants",
     title: "RESTAURANTS AND CAFE'S",
-    image: "./assets/images/industry-restaurants.jpg",
+    image: "./assets/images/industry-restaurants-premium.jpg",
     intro:
       "Zing Card's simple and convenient restaurant merchant account services allow you to focus on your business while increasing profits and improving service.",
     paragraphs: [
@@ -157,7 +157,7 @@ export const industries = [
     slug: "powersports",
     label: "Power Sports",
     title: "POWER SPORTS",
-    image: "./assets/images/industry-powersports.jpg",
+    image: "./assets/images/industry-powersports-premium.jpg",
     intro: "Zing Racing, a division of Zing Card LLC specializing in servicing the Motor Sports industry.",
     paragraphs: [
       "We are a specialist in the Powersports/Motorcycle industry! If you are a Powersport Dealer, you owe it to yourself to compare Zing to your current provider!",
@@ -176,7 +176,7 @@ export const industries = [
     slug: "nonprofit",
     label: "Non-Profit Organizations",
     title: "NON-PROFIT",
-    image: "./assets/images/industry-nonprofit.jpg",
+    image: "./assets/images/industry-nonprofit-premium.jpg",
     intro: "We have a number of different non-profit software options for you to choose from!",
     paragraphs: [
       "Special Programs for Non-Profit and Charity Organizations!"
