@@ -198,4 +198,5 @@ Replace the current architecture-led hero visual with a more payments-native sce
 - Mobile lead capture also needs one more pass because the header CTA disappears on mobile and the contact experience requires deeper scrolling than necessary.
 
 ### One-By-One Iteration Log
-- Pass 1: Mobile homepage feature cards. Scope: `styles.css` responsive rules only, plus this tracker note. Status: included in the next Render deploy for live verification.
+- Pass 1: Mobile homepage feature cards. Scope: `styles.css` responsive rules only, plus this tracker note. Status: deployed live in Render deploy `dep-d7l78ii8qa3s73a4rlt0` from commit `4603fef`.
+- Pass 2: Contact endpoint durability. Scope: persist contact submissions to the Render disk path when available, return a tracking id, reduce PII console logging, cap request body size, and add the missing `/healthz` endpoint. Status: implemented locally and verified with health, valid submission, missing-field, and oversized-body checks; deploy pending.
