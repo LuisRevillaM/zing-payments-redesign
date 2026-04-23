@@ -87,6 +87,7 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 - `assets/images/poynt-n910-official.png`
 - `assets/images/talech-register-front-official.webp`
 - `assets/images/talech-register-closeup-official.webp`
+- `assets/generated-hero/hero-payments-scene.jpg`
 - `artifacts/generated-assets/clover-go/clover-go-clean.jpg`
 - `artifacts/generated-assets/clover-go/clover-go-clean-full.jpg`
 - `artifacts/generated-assets/clover-go/clover-go-clean-wide.jpg`
@@ -96,6 +97,34 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 - Official Clover imagery was recoverable for Flex, Mini, and Station, but the cleanest usable Clover Go source available was a small icon plus an annotated diagram. Generated Clover Go tests are saved in `artifacts/generated-assets/clover-go/`, but the current shipped site still uses the official Clover Go icon because it frames better than the generated attempts.
 - The original site copy is long and uneven; page structure must preserve content while avoiding another bloated brochure experience.
 - Form submissions currently only need to be real and testable inside Render; downstream CRM/email routing is still unresolved.
+
+## Hero Re-Concept Brief
+
+### Current Problem
+- The homepage hero is visually polished but reads as a collage.
+- `assets/images/hero-architecture.jpg` is low resolution and communicates "modern building" more than "merchant payments."
+- The floating devices prove product breadth, but the assembled composition does not yet feel like one coherent scene.
+- The circular zero-cost badge is effective messaging, but it competes with the hardware instead of feeling integrated.
+
+### Goal
+Replace the current architecture-led hero visual with a more payments-native scene that still feels premium, modern, and B2B. The hero should communicate:
+- trust and scale
+- physical payment hardware
+- real commerce context
+- modern but not generic fintech aesthetics
+
+### Visual Requirements
+- Warm, editorial, premium tone; avoid sterile SaaS illustration.
+- Scene should feel native to merchant services: countertop payments, modern retail/hospitality workspace, or high-end business checkout moment.
+- Composition must support the existing left-copy / right-visual homepage layout.
+- Hardware should remain visible and legible at desktop and mobile breakpoints.
+- Image should work inside the current rounded hero container or justify simplifying that container.
+
+### Execution Plan
+1. Generate a concept image with a strong commerce-native composition.
+2. Produce a production-ready hero asset in the workspace.
+3. Decide whether the stage should keep multiple floating product cutouts or move to a more unified single-scene visual.
+4. Implement the strongest option without rewriting the homepage copy.
 
 ## Workstreams
 
@@ -146,6 +175,9 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 - Replaced the low-resolution Poynt imagery with official Poynt hardware visuals.
 - Tested reference-backed Gemini generations for Clover Go and kept those outputs in `artifacts/generated-assets/clover-go/` for future iteration, but shipped the official Clover Go icon because it framed more cleanly in the current card system.
 - Updated the homepage hero and equipment data layer to use the refreshed asset set.
+- Added a dedicated hero brief to this tracker to stop the homepage visual from drifting into another collage treatment.
+- Generated a new commerce-native hero scene in `assets/generated-hero/hero-payments-scene.jpg`.
+- Simplified the homepage hero stage so the generated scene now carries the visual composition instead of sitting under floating device cutouts.
 
 ## Definition Of Done For This Pass
 - The deployed site visually tracks much closer to the generated concept.
