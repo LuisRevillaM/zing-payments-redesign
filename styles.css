@@ -1116,6 +1116,14 @@ button {
     min-height: 560px;
   }
 
+  .feature-card {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card__media {
+    min-height: 280px;
+  }
+
   .hero-trust,
   .metrics-grid,
   .partner-preview-grid,
@@ -1153,6 +1161,23 @@ button {
     bottom: 30px;
     width: 110px;
     height: 110px;
+  }
+
+  .feature-card__copy h3 {
+    font-size: 2.35rem;
+    line-height: 1;
+  }
+
+  .feature-card__media {
+    min-height: 220px;
+  }
+
+  .feature-swirl {
+    min-height: 220px;
+  }
+
+  .feature-card__media--image img {
+    min-height: 240px;
   }
 
   .industry-preview-grid,

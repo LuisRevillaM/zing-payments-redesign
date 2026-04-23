@@ -185,3 +185,17 @@ Replace the current architecture-led hero visual with a more payments-native sce
 - Real equipment and industry images are in place.
 - Contact form submits to a real backend handler and returns a real result.
 - The tracker is updated with what shipped, what did not, and what still needs iteration.
+
+## Full Site Audit Notes
+
+### 2026-04-23 Full Review
+- The live hero is intentionally different from the original concept reference. The current homepage uses `assets/generated-hero/hero-payments-scene.jpg` as a single commerce-native scene instead of the earlier composite mockup treatment with architecture plus floating device renders.
+- Desktop quality is materially stronger than mobile quality. The homepage feature cards retained a desktop two-column internal layout on small screens, which caused cramped text columns and oversized media blocks on mobile. Status: fixed in the first one-by-one pass by stacking each feature card internally below 940px.
+- The equipment page is now the strongest secondary page, but Clover Go and some Poynt assets remain weaker than Clover Mini / Station / Flex in clarity and resolution.
+- Industry imagery is still a weak link. The current industry images are visually relevant but low resolution, which makes the dedicated industries page feel softer and less premium than the homepage hero and equipment page.
+- Solutions, Gateway, and About still read like structured brochure content rather than finished world-class landing experiences. They are functional, but too text-heavy and too visually repetitive.
+- Contact flow is much better than the first pass, but it is still not production-complete because submissions only log locally/in console. Durable delivery to email, CRM, or webhook is still unresolved.
+- Mobile lead capture also needs one more pass because the header CTA disappears on mobile and the contact experience requires deeper scrolling than necessary.
+
+### One-By-One Iteration Log
+- Pass 1: Mobile homepage feature cards. Scope: `styles.css` responsive rules only, plus this tracker note. Status: included in the next Render deploy for live verification.
