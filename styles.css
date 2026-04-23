@@ -599,8 +599,11 @@ button {
 
 .equipment-spotlight__media img,
 .equipment-card__image img {
-  max-height: 150px;
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
   object-fit: contain;
+  object-position: center;
 }
 
 .equipment-spotlight strong {

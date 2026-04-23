@@ -77,9 +77,23 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 - `assets/images/talech-elo.jpg`
 - `assets/images/talech-all-in-one.jpg`
 - `assets/images/solution-mobile.jpg`
+- `assets/images/clover-flex-official.png`
+- `assets/images/clover-mini-official.webp`
+- `assets/images/clover-station-official.webp`
+- `assets/images/clover-go-icon-official.png`
+- `assets/images/clover-go-diagram-official.png`
+- `assets/images/poynt-hero-official.png`
+- `assets/images/poynt-smart-terminal-official.png`
+- `assets/images/poynt-n910-official.png`
+- `assets/images/talech-register-front-official.webp`
+- `assets/images/talech-register-closeup-official.webp`
+- `artifacts/generated-assets/clover-go/clover-go-clean.jpg`
+- `artifacts/generated-assets/clover-go/clover-go-clean-full.jpg`
+- `artifacts/generated-assets/clover-go/clover-go-clean-wide.jpg`
 
 ## Known Risks / Open Questions
-- Some downloaded imagery from the current site is low resolution and may need a second asset pass.
+- Some first-pass industry and lifestyle imagery from the current site is still low resolution and may need a second asset pass.
+- Official Clover imagery was recoverable for Flex, Mini, and Station, but the cleanest usable Clover Go source available was a small icon plus an annotated diagram. Generated Clover Go tests are saved in `artifacts/generated-assets/clover-go/`, but the current shipped site still uses the official Clover Go icon because it frames better than the generated attempts.
 - The original site copy is long and uneven; page structure must preserve content while avoiding another bloated brochure experience.
 - Form submissions currently only need to be real and testable inside Render; downstream CRM/email routing is still unresolved.
 
@@ -102,8 +116,8 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 
 ### 4. Assets
 - [x] Download first-pass real imagery for industries and equipment
-- [ ] Audit image quality and replace weak assets where necessary
-- [ ] Ensure alt text and captions are accurate
+- [x] Audit image quality and replace weak assets where necessary
+- [x] Ensure alt text and captions are accurate
 
 ### 5. Contact Flow
 - [x] Add backend submission endpoint in `server.js`
@@ -127,6 +141,11 @@ Rebuild `zingpayments.com` into a modern, world-class B2B marketing site that:
 - Removed implementation-facing copy from the page intros and contact states so the user-facing language stays on the business, not the rebuild.
 - Verified the contact form now posts to `POST /api/contact` and logs a real submission on the local Node server.
 - Verified `200` responses locally for `/`, `/about`, `/solutions`, `/industries`, `/equipment`, `/partners`, `/gateway`, and `/contact`.
+- Replaced the weak/mislabeled Clover images with official Clover assets for Flex, Mini, and Station.
+- Replaced the incorrect Talech placeholder image and low-resolution Talech imagery with official Elavon Talech Register renders.
+- Replaced the low-resolution Poynt imagery with official Poynt hardware visuals.
+- Tested reference-backed Gemini generations for Clover Go and kept those outputs in `artifacts/generated-assets/clover-go/` for future iteration, but shipped the official Clover Go icon because it framed more cleanly in the current card system.
+- Updated the homepage hero and equipment data layer to use the refreshed asset set.
 
 ## Definition Of Done For This Pass
 - The deployed site visually tracks much closer to the generated concept.

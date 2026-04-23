@@ -199,49 +199,49 @@ export const equipment = [
     category: "clover",
     name: "Clover Station",
     sublabel: "Full Clover Station and Clover Mini",
-    image: "./assets/images/clover-station.webp"
+    image: "./assets/images/clover-station-official.webp"
   },
   {
     category: "clover",
     name: "Clover Flex",
     sublabel: "Clover Mobile Point-Of-Sale",
-    image: "./assets/images/clover-flex.jpg"
+    image: "./assets/images/clover-flex-official.png"
   },
   {
     category: "clover",
     name: "Clover Go",
     sublabel: "Compact acceptance device",
-    image: "./assets/images/clover-go.webp"
+    image: "./assets/images/clover-go-icon-official.png"
   },
   {
     category: "clover",
     name: "Clover Mini",
     sublabel: "Countertop compact POS",
-    image: "./assets/images/clover-mini.jpg"
+    image: "./assets/images/clover-mini-official.webp"
   },
   {
     category: "talech",
     name: "ELO Touch Screen",
     sublabel: "Talech Point-Of-Sale",
-    image: "./assets/images/talech-elo.jpg"
+    image: "./assets/images/talech-register-closeup-official.webp"
   },
   {
     category: "talech",
     name: "All-In-One ELO Station",
     sublabel: "Retail and Restaurant Software",
-    image: "./assets/images/talech-all-in-one.jpg"
+    image: "./assets/images/talech-register-front-official.webp"
   },
   {
     category: "poynt",
     name: "Poynt 5 Payment Device",
-    sublabel: "smallar version of the Poynt",
-    image: "./assets/images/poynt-five.jpg"
+    sublabel: "Smaller version of the Poynt",
+    image: "./assets/images/poynt-hero-official.png"
   },
   {
     category: "poynt",
     name: "Payment Terminal",
     sublabel: "Take Payments on your Computer, IPad or any mobile device",
-    image: "./assets/images/poynt-terminal.png"
+    image: "./assets/images/poynt-smart-terminal-official.png"
   }
 ];
 
