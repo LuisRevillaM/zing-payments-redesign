@@ -1070,13 +1070,17 @@ button {
 
 @media (max-width: 940px) {
   .header-shell {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
   }
 
   .menu-toggle {
+    grid-row: 1;
+    grid-column: 3;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    justify-self: end;
   }
 
   .site-nav {
@@ -1104,7 +1108,20 @@ button {
   }
 
   .header-cta {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-self: end;
+  }
+
+  .header-phone {
     display: none;
+  }
+
+  .header-cta .button {
+    min-height: 44px;
+    padding: 0.8rem 1rem;
+    font-size: 0.82rem;
   }
 
   .contact-banner__details {
@@ -1134,6 +1151,47 @@ button {
 }
 
 @media (max-width: 640px) {
+  #site-header {
+    top: 8px;
+    margin-top: 8px;
+  }
+
+  .header-shell {
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .brandmark {
+    gap: 8px;
+  }
+
+  .brandmark__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .brandmark__copy strong {
+    font-size: 1.06rem;
+  }
+
+  .brandmark__copy span {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .header-cta .button {
+    min-height: 42px;
+    padding: 0.72rem 0.9rem;
+    font-size: 0.76rem;
+  }
+
   .page-shell {
     width: min(100% - 20px, 1280px);
   }

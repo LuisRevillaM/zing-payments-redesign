@@ -199,4 +199,5 @@ Replace the current architecture-led hero visual with a more payments-native sce
 
 ### One-By-One Iteration Log
 - Pass 1: Mobile homepage feature cards. Scope: `styles.css` responsive rules only, plus this tracker note. Status: deployed live in Render deploy `dep-d7l78ii8qa3s73a4rlt0` from commit `4603fef`.
-- Pass 2: Contact endpoint durability. Scope: persist contact submissions to the Render disk path when available, return a tracking id, reduce PII console logging, cap request body size, and add the missing `/healthz` endpoint. Status: implemented locally and verified with health, valid submission, missing-field, and oversized-body checks; deploy pending.
+- Pass 2: Contact endpoint durability. Scope: persist contact submissions to the Render disk path when available, return a tracking id, reduce PII console logging, cap request body size, and add the missing `/healthz` endpoint. Status: deployed live in Render deploy `dep-d7l7kpm7r5hc73ag8vu0` from commit `9ff4f1f`; live health, valid submission, and missing-field checks passed.
+- Pass 3: Mobile lead capture header. Scope: keep a persistent Contact Us CTA visible in the mobile sticky header while preserving the hamburger navigation. Status: implemented locally and verified at 320px and 390px; deploy pending.
