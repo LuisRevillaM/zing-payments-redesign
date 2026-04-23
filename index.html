@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zing Payments | Modern Merchant Processing</title>
+    <meta
+      name="description"
+      content="A modern redesign for Zing Payments that keeps the existing merchant processing copy while rebuilding the experience around stronger structure, readability, and navigation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="site-header">
+        <a class="brand" href="#top" aria-label="Zing Payments home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="46" height="46" rx="14" fill="url(#brandGradient)" />
+              <path
+                d="M15 16H33L17 32H33"
+                stroke="url(#brandStroke)"
+                stroke-width="3.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <linearGradient id="brandGradient" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#191715" />
+                  <stop offset="1" stop-color="#302A24" />
+                </linearGradient>
+                <linearGradient id="brandStroke" x1="12" y1="12" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#D89266" />
+                  <stop offset="1" stop-color="#B5673C" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Zing Payments</strong>
+            <span>Merchant services, rebuilt for today</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#story">Story</a>
+          <a href="#industries">Industries</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#zero-cost">Zero Pay</a>
+          <a href="#technology">Technology</a>
+          <a href="#partners">Partners</a>
+          <a href="#gateway">Gateway</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-phone" href="tel:8002491381">800-249-1381</a>
+          <a class="button button--primary" href="#contact">Inquiry Form</a>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section-shell" id="top">
+          <div class="hero-grid">
+            <div class="hero-copy reveal is-visible">
+              <p class="eyebrow">Founded in January 2008</p>
+              <h1 class="display">Empower Growth</h1>
+              <p class="hero-summary">
+                Founded in January 2008, Zing Card Payment Systems specializes in selling cutting-edge point of sale
+                systems and offers competitive credit card processing rates, we ensure a seamless experience for your
+                point-of-sale and merchant processing needs.
+              </p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="#contact">Get Started</a>
+                <a class="button button--secondary" href="#industries">Explore Industries</a>
+              </div>
+              <div class="hero-metrics">
+                <article class="metric-card">
+                  <strong>2008</strong>
+                  <span>Founded in January 2008</span>
+                </article>
+                <article class="metric-card">
+                  <strong>0%</strong>
+                  <span>You pay zero on all credit card transactions.</span>
+                </article>
+                <article class="metric-card">
+                  <strong>35%</strong>
+                  <span>ZingDonate gives back 35% of the fees to the charity organization.</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal is-visible" aria-hidden="true">
+              <div class="hero-glow hero-glow--one"></div>
+              <div class="hero-glow hero-glow--two"></div>
+              <div class="hero-orbit"></div>
+
+              <article class="hero-card hero-card--dark">
+                <span class="card-eyebrow">Zero Cost Processing</span>
+                <strong>Simple, transparent pricing.</strong>
+                <p>There is a solution for every way you accept cards: Face-to-Face, POS, Web, Virtual Terminal.</p>
+              </article>
+
+              <article class="hero-card hero-card--light">
+                <span class="card-eyebrow">Banking Partnership</span>
+                <strong>Building a partnership with teamwork</strong>
+                <p>Account support, reporting access, branded solutions, and customized partnership programs.</p>
+              </article>
+
+              <div class="hero-device">
+                <div class="hero-device__screen">
+                  <div class="screen-pills">
+                    <span>Industries</span>
+                    <span>Equipment</span>
+                    <span>Gateway</span>
+                  </div>
+                  <div class="screen-chart">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="screen-line">
+                    <strong>Competitive pricing designed to save you money on your merchant account</strong>
+                  </div>
+                  <div class="screen-grid">
+                    <span>QuickBooks</span>
+                    <span>ACH</span>
+                    <span>IVR</span>
+                    <span>Clover POS</span>
+                  </div>
+                </div>
+              </div>
+
+              <article class="hero-card hero-card--accent">
+                <span class="card-eyebrow">Converge Gateway</span>
+                <strong>Build your payment solution with Converge Gateway.</strong>
+                <p>Zero Gateway Fees, support for multiple operating systems, and built-in productivity boosters.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="trust-strip reveal is-visible">
+            <span class="trust-chip">Our Story</span>
+            <span class="trust-chip">Industries / Tech</span>
+            <span class="trust-chip">Our Equipment</span>
+            <span class="trust-chip">Clover POS</span>
+            <span class="trust-chip">Talech POS</span>
+            <span class="trust-chip">Bank Partnerships</span>
+          </div>
+        </section>
+
+        <section class="section section-shell reveal" id="story">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Our Story</p>
+              <h2 class="section-title">Merchant services with better structure and stronger clarity.</h2>
+            </div>
+            <p class="section-intro">
+              Zing Card Payment Systems provides businesses with up to date pricing and information for processing all
+              types of credit cards and debit cards. We want to help you better understand what other credit card
+              processing companies are doing and get you the lowest rates on your service.
+            </p>
+          </div>
+
+          <div class="story-layout">
+            <article class="story-card">
+              <div class="story-grid">
+                <p>
+                  Understanding the basics of the merchant service industry is very important when selecting a processing
+                  provider. Zing Card is committed to giving our clients the most cost effective ways to grow their
+                  business.
+                </p>
+                <p>
+                  Visa and MasterCard have over 300 different charge types that can affect your costs. We will show you
+                  how certain card types and the methods of accepting those cards can cause your rates to fluctuate.
+                </p>
+                <p>
+                  Credit cards are impacting your net profit, a crucial element to your bottom line. Understand the
+                  difference in pricing structures and what it means to your effective rate.
+                </p>
+                <p>
+                  It is free to get a quote. It is important to make sure you are receiving the lowest rates possible.
+                  The merchant services industry is always changing - we will help you lower your current rates.
+                </p>
+                <div class="story-note">
+                  <span>Relationship first</span>
+                  <p>
+                    We get to know your business and your growth plans from the very beginning. Through this close
+                    relationship, we ensure your payment experience is always seamless so you can focus on growing your
+                    business, rather than worrying about service disruptions.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <aside class="advantage-card">
+              <p class="eyebrow">The Zing Card Advantage</p>
+              <ul class="bullet-list">
+                <li>Superior customer service: dependable and responsive. Our customer support is our main priority.</li>
+                <li>All payment processing on one statement including American Express.</li>
+                <li>AMEX funding is deposited the same time as all card types.</li>
+                <li>Monitor your account around the clock with Payments Insider.</li>
+                <li>Next day funding is available, and same day funding is now available.</li>
+                <li>No application or termination fees.</li>
+                <li>American Express rates are the same as Visa and MasterCards.</li>
+                <li>One source for all your payment processing needs.</li>
+                <li>Risk Management and Fraud Control. Full PCI services.</li>
+                <li>Easy setup and integration to any POS, certified on most payment processing gateways.</li>
+                <li>Accept credit cards anywhere you do business with our Mobile Merchant Account.</li>
+                <li>Affordable cloud and server based Point-of-Sale Systems.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section-shell reveal" id="industries">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Industries</p>
+              <h2 class="section-title">A modern section map for every vertical already on the site.</h2>
+            </div>
+            <p class="section-intro">
+              The original site spreads this copy across a long sequence of disconnected blocks. This redesign keeps the
+              wording, but turns the section into a usable vertical navigator.
+            </p>
+          </div>
+
+          <div class="industries-shell">
+            <div class="industry-tabs" id="industry-tabs"></div>
+            <article class="industry-panel glass-panel" id="industry-panel"></article>
+          </div>
+        </section>
+
+        <section class="section section-shell reveal" id="equipment">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Our Equipment</p>
+              <h2 class="section-title">Clover, Talech, and Poynt grouped like a product catalog.</h2>
+            </div>
+            <p class="section-intro">
+              Instead of a long image dump, equipment is organized into a filterable product surface that makes the POS
+              lineup easier to scan on desktop and mobile.
+            </p>
+          </div>
+
+          <div class="filter-toolbar" id="equipment-filters" aria-label="Equipment categories"></div>
+          <div class="equipment-grid" id="equipment-grid"></div>
+        </section>
+
+        <section class="section section-shell reveal" id="zero-cost">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Zing Zero Pay Program</p>
+              <h2 class="section-title">Zero cost processing, reframed as a premium program page.</h2>
+            </div>
+            <p class="section-intro">
+              Zero cost on credit cards. Simple, transparent pricing. There is a solution for every way you accept
+              cards: Face-to-Face, POS, Web, Virtual Terminal.
+            </p>
+          </div>
+
+          <div class="zero-shell">
+            <article class="zero-copy">
+              <p>
+                Bottom line is you pay zero on all credit card transactions. We do not need to look at your statement,
+                just look at your credit card costs and that is what you will save.
+              </p>
+              <ul class="bullet-list">
+                <li>
+                  Zing Pay allows customers to pay the fee if they choose a credit card to pay. If they use a debit
+                  card the business pays the fee. Keep in mind debit fees are super low.
+                </li>
+                <li>When customers choose a debit card, they pay no fee, keeping you compliant and giving your customers a choice.</li>
+                <li>
+                  Your customers always have a no-fee payment option. To comply with the rules, we automatically detect
+                  when a debit card is entered and apply no fee.
+                </li>
+                <li>You pay only the low cost of debit card acceptance.</li>
+                <li>
+                  Fully compliant: our turnkey solution complies with all the rules and automatically has you covered.
+                </li>
+                <li>Customer friendly: your customers can always choose debit as a no-fee option.</li>
+                <li>
+                  Zero cost: you keep 100% of every credit card sale; when you sell $100, you receive $100. Pay only
+                  for debit card transactions.
+                </li>
+              </ul>
+              <div class="sign-up-card">
+                <p class="eyebrow">How to Sign-up?</p>
+                <ul class="bullet-list">
+                  <li>Fill out merchant application to setup an account.</li>
+                  <li>We fill out required paperwork to insure compliancy with the card associations.</li>
+                  <li>
+                    Receive Custom Terminal / Website / Mobile app with EMV Quick Chip and the ZC application
+                    pre-installed. Plug in the terminal or setup our POS and you are ready to go.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <aside class="zero-pricing">
+              <p class="eyebrow">Example of how it works</p>
+              <div class="comparison-grid">
+                <article class="comparison-card">
+                  <span>Sell $100 on a credit card</span>
+                  <strong>Receive $100 in your account</strong>
+                  <div class="comparison-meta">
+                    <div>
+                      <span>You Pay</span>
+                      <strong>0%</strong>
+                    </div>
+                    <div>
+                      <span>Your Customer's Fee</span>
+                      <strong>3.%</strong>
+                    </div>
+                  </div>
+                </article>
+                <article class="comparison-card">
+                  <span>Sell $100 on a debit card</span>
+                  <strong>Receive $98.75 in your account</strong>
+                  <div class="comparison-meta">
+                    <div>
+                      <span>You Pay</span>
+                      <strong>1%</strong>
+                    </div>
+                    <div>
+                      <span>Your Customer's Fee</span>
+                      <strong>0%</strong>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section-shell reveal" id="technology">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Technology</p>
+              <h2 class="section-title">Expandable product content instead of a long unreadable wall.</h2>
+            </div>
+            <p class="section-intro">
+              The technology section now behaves like a polished knowledge surface. The wording stays intact, but users
+              can drill into the details without losing the page.
+            </p>
+          </div>
+
+          <div class="solution-grid" id="solution-grid"></div>
+        </section>
+
+        <section class="section section-shell reveal" id="partners">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Partner Programs</p>
+              <h2 class="section-title">Programs grouped by relationship instead of buried in the page.</h2>
+            </div>
+            <p class="section-intro">
+              Banking partnerships, CPA referrals, and the Agent / ISO program all remain here, but with clearer
+              hierarchy and better spacing.
+            </p>
+          </div>
+
+          <div class="program-grid" id="program-grid"></div>
+        </section>
+
+        <section class="section section-shell reveal" id="gateway">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Developers</p>
+              <h2 class="section-title">Converge Gateway surfaced as an actual destination.</h2>
+            </div>
+            <p class="section-intro">
+              The original site references the gateway in scattered places. Here it becomes a dedicated, visible
+              developer and integration callout.
+            </p>
+          </div>
+
+          <div class="gateway-panel">
+            <article class="gateway-copy">
+              <p class="eyebrow">Converge Gateway</p>
+              <h3>Build your payment solution with Converge Gateway.</h3>
+              <p>
+                We are enhancing our resources to streamline the integration experience. You will see updates across
+                many different areas of the site, with new and exciting tools to come.
+              </p>
+              <ul class="bullet-list bullet-list--light">
+                <li>Zero Gateway Fees</li>
+                <li>Support for multiple operating systems</li>
+                <li>Built around an omni-commerce platform</li>
+                <li>Optimize the cost of payment acceptance</li>
+                <li>Pre-certified package</li>
+                <li>Built-in productivity boosters, customized buy buttons, payment pages, and invoices</li>
+                <li>Easy integration and support team ready to help</li>
+                <li>And much more</li>
+              </ul>
+            </article>
+
+            <div class="gateway-links">
+              <a href="https://developer.elavon.com/products/commerce-sdk/v1/overview" target="_blank" rel="noreferrer">
+                <span>Explore Solutions</span>
+                <strong>developer.elavon.com/products/commerce-sdk/v1/overview</strong>
+              </a>
+              <a href="https://developer.elavon.com" target="_blank" rel="noreferrer">
+                <span>Developer Portal</span>
+                <strong>developer.elavon.com</strong>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-shell reveal" id="contact">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Contact Us</p>
+              <h2 class="section-title">Inquiry form, phone, and office locations in one clean final section.</h2>
+            </div>
+            <p class="section-intro">
+              Please fill out the below form and a Payment Specialist will contact you shortly.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card">
+              <div class="contact-visual" aria-hidden="true">
+                <div class="contact-visual__beam"></div>
+                <div class="contact-visual__card">
+                  <span>Phone</span>
+                  <strong>800-249-1381</strong>
+                </div>
+                <div class="contact-visual__card contact-visual__card--alt">
+                  <span>Fax</span>
+                  <strong>630-524-9110</strong>
+                </div>
+              </div>
+              <div class="contact-details">
+                <h3>Zing Payments</h3>
+                <p>Dallas, Texas</p>
+                <p>Houston, Texas</p>
+                <p>Santa Rosa Beach, Florida</p>
+                <p>St. Charles, IL</p>
+              </div>
+            </article>
+
+            <article class="contact-form-card">
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+                  <label class="form-field">
+                    <span>First name</span>
+                    <input type="text" name="firstName" autocomplete="given-name" required />
+                  </label>
+                  <label class="form-field">
+                    <span>Last name</span>
+                    <input type="text" name="lastName" autocomplete="family-name" required />
+                  </label>
+                  <label class="form-field form-field--full">
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="email" required />
+                  </label>
+                  <label class="form-field form-field--full">
+                    <span>Let us know which service or product you are interested in</span>
+                    <textarea name="interest" required></textarea>
+                  </label>
+                </div>
+                <button class="button button--primary button--full" type="submit">Submit</button>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-shell">
+          <div>
+            <p class="eyebrow">Zing Payments</p>
+            <h3>Merchant services, equipment, and partnership programs in one modern page.</h3>
+          </div>
+          <div class="footer-meta">
+            <span>Phone</span>
+            <strong>800-249-1381</strong>
+            <span>Fax</span>
+            <strong>630-524-9110</strong>
+          </div>
+          <div class="footer-meta">
+            <span>Offices</span>
+            <strong>Dallas, Texas</strong>
+            <strong>Houston, Texas</strong>
+            <strong>Santa Rosa Beach, Florida</strong>
+            <strong>St. Charles, IL</strong>
+          </div>
+        </div>
+        <p class="footer-note">Zing Card, LLC is a Registered MSP/ISO of Elavon, Inc. Georgia.</p>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
