@@ -1,4 +1,4 @@
-import { createReadStream, existsSync } from "node:fs";
+import { appendFile, createReadStream, existsSync } from "node:fs";
 import { stat } from "node:fs/promises";
 import { createServer } from "node:http";
 import { extname, join, normalize } from "node:path";
@@ -33,12 +33,61 @@ function sendNotFound(response) {
   response.end("Not found");
 }
 
+function readRequestBody(request) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    request.on("data", (chunk) => chunks.push(chunk));
+    request.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
+    request.on("error", reject);
+  });
+}
+
 createServer(async (request, response) => {
   const requestUrl = new URL(request.url || "/", `http://${request.headers.host || "localhost"}`);
+
+  if (request.method === "POST" && requestUrl.pathname === "/api/contact") {
+    try {
+      const raw = await readRequestBody(request);
+      const payload = JSON.parse(raw || "{}");
+      const required = ["firstName", "lastName", "email", "interest", "message"];
+      const missing = required.filter((key) => !String(payload[key] || "").trim());
+
+      if (missing.length > 0) {
+        response.writeHead(400, { "Content-Type": "application/json; charset=utf-8" });
+        response.end(JSON.stringify({ ok: false, error: "Missing required fields" }));
+        return;
+      }
+
+      const submission = {
+        receivedAt: new Date().toISOString(),
+        ...payload
+      };
+
+      console.log("Contact submission", JSON.stringify(submission));
+      appendFile(join(rootDir, "contact-submissions.log"), `${JSON.stringify(submission)}\n`, () => {});
+
+      response.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+      response.end(JSON.stringify({ ok: true }));
+      return;
+    } catch {
+      response.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+      response.end(JSON.stringify({ ok: false, error: "Could not process submission" }));
+      return;
+    }
+  }
+
   let filePath = resolvePath(requestUrl.pathname === "/" ? "/index.html" : requestUrl.pathname);
 
+  if (!existsSync(filePath) && !extname(filePath)) {
+    const htmlPath = `${filePath}.html`;
+    if (existsSync(htmlPath)) {
+      filePath = htmlPath;
+    }
+  }
+
   if (!existsSync(filePath)) {
-    filePath = join(rootDir, "index.html");
+    sendNotFound(response);
+    return;
   }
 
   try {
