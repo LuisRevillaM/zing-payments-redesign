@@ -1,11 +1,7 @@
 services:
   - type: web
     name: zing-payments-redesign
-    runtime: static
+    runtime: node
     plan: free
-    buildCommand: echo "No build step required"
-    staticPublishPath: .
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    buildCommand: npm install
+    startCommand: npm start
